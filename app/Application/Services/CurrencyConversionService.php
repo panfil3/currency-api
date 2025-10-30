@@ -16,7 +16,7 @@ use App\Infrastructure\CircuitBreaker\CircuitBreaker;
 final class CurrencyConversionService
 {
     private const CACHE_TTL = 1;
-    private const MAX_RATE_AGE_MINUTES = 60;
+    private const MAX_RATE_AGE_MINUTES = 1440;
 
     public function __construct(
         private IgniteCacheAdapter $l1Cache,

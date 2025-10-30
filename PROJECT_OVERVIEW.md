@@ -523,7 +523,7 @@ See `App\Domain\Currency\ValueObjects\CurrencyCode` enum for full list.
 - Key format: `currency:rate:{from}:{to}`
 
 **L2 Cache (Database):**
-- Max age: 1 hour (configurable in `CurrencyConversionService::MAX_RATE_AGE_MINUTES`)
+- Max age: 24 hour (configurable in `CurrencyConversionService::MAX_RATE_AGE_MINUTES`)
 - Automatically refreshed by background job
 - Table: `currency_rates`
 
